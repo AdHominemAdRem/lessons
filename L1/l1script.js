@@ -6,15 +6,15 @@ var name = prompt("Название вашего магазина?","");
 
 mainlist = {
 	budget: budget,
-	name: name,
+	Shopname: name,
 	shopGoods: [],
-	eployers: [],
+	eployers: {},
 	open: false,
 };
 
-mainlist.shopGoods[0] = prompt("Какой тип товаров будем продавать?","")
+mainlist.shopGoods[0] = prompt("Какой тип товаров будем продавать?","");
+mainlist.shopGoods[1] = prompt("Какой тип товаров будем продавать?","");
+mainlist.shopGoods[2] = prompt("Какой тип товаров будем продавать?","");
+alert("Ваш бюджет в день: " + (mainlist.budget/30));
 
-mainlist.shopGoods[1] = prompt("Какой тип товаров будем продавать?","")
-
-mainlist.shopGoods[2] = prompt("Какой тип товаров будем продавать?","")
-alert("Ваш бюджет в день: " + (budget/30));
+console.log(mainlist);
